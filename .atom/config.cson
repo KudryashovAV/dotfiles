@@ -1,0 +1,25 @@
+"*":
+  autosave:
+    enabled: true
+  core:
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
+  editor:
+    fontSize: 16
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "cb11bb53-3811-29ac-8dce-e8ac04b53c75"
+  linter:
+    ignoredLinterErrors: [
+      "haml-lint"
+    ]
+  metrics:
+    userId: "b7f615da171211f53b9060721acbb5e6f65e3e4f"
+  tabs: {}
+  "toggle-quotes": {}
+  welcome:
+    showOnStartup: false

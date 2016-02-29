@@ -1,0 +1,24 @@
+'.source.jade':
+
+    # script snippets
+
+    'script(type="text/javascript", src="js/main.js")':
+        'prefix': 'script.source'
+        'body': '''
+            script(type='${1:text/javascript}', src='${2:js/main.js}', ${3:attr})
+            $4
+        '''
+
+    'script.':
+        'prefix': 'script.inline'
+        'body': '''
+            script.
+                $1
+        '''
+
+    'script include':
+        'prefix': 'script.include'
+        'body': '''
+            script
+                include ${1:script.js}
+        '''

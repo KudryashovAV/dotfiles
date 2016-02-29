@@ -1,0 +1,36 @@
+{
+  "name": "jade-bootstrap3-snippets",
+  "main": "./lib/jade-bootstrap3-snippets",
+  "version": "0.3.0",
+  "description": "Bootstrap3 Jade Snippets for Atom",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GlebSkripnikov/atom-jade-bootstrap3.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {},
+  "readme": "# jade-bootstrap3-snippets package\n\nJade Bootstrap3 Snippets for Atom.\n\n![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/GlebSkripnikov/atom-jade-bootstrap3/issues"
+  },
+  "homepage": "https://github.com/GlebSkripnikov/atom-jade-bootstrap3#readme",
+  "_id": "jade-bootstrap3-snippets@0.3.0",
+  "_shasum": "11ca7f3e9ae9928d90cea2abb699cc9ca8bbbd7c",
+  "_resolved": "file:../d-116125-68788-bbg326/package.tgz",
+  "_from": "../d-116125-68788-bbg326/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

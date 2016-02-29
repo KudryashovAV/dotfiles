@@ -1,0 +1,37 @@
+[push]
+  default = current
+[color]
+  ui = auto
+[alias]
+  aa = add --all
+  amend = commit --amend
+  ap = add --patch
+  br = branch
+  ca = commit --amend
+  ci = commit -v
+  co = checkout
+  create-branch = !sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -
+  delete-branch = !sh -c 'git push origin :refs/heads/$1 && git remote prune origin && git branch -D $1' -
+  dc = diff --cached
+  di = diff
+  fa = fetch --all -p
+  l = log --graph --abbrev-commit --date=relative
+  la = !git l --all
+  merge-branch = !git checkout master && git merge @{-1}
+  pr = !hub pull-request
+  r = !man
+  ra = !git r --all
+  st = status -sb
+  up = !git fetch origin && git rebase origin/master
+[core]
+  excludesfile = ~/.gitignore
+  autocrlf = input
+  pager=less -X
+[merge]
+  ff = only
+[include]
+  path = .gitconfig.local
+[format]
+  pretty = format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
+[help]
+	autocorrect = 1

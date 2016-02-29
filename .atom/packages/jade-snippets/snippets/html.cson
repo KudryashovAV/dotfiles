@@ -1,0 +1,46 @@
+'.source.jade':
+
+    # html templates snippets
+
+    'doctype html':
+        'prefix': 'doctype'
+        'body': '''
+            doctype html
+            $1
+        '''
+
+    'html':
+        'prefix': 'html'
+        'body': '''
+            doctype html
+            html(lang='${1:en}')
+                head
+                    title $1
+                body
+                    $2
+        '''
+
+    'html5 template':
+        'prefix': 'html5'
+        'body': '''
+            doctype html
+            html(lang='${1:en}')
+                head
+                    title ${2:Untitled}
+                    meta(charset='utf-8')
+                    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+                    meta(name='description', content='description')
+                    meta(name='keywords', content='keywords')
+                    meta(name='author', content='author')
+                    meta(name="robots", content="index, follow")
+
+                    //- ----- link website ----- //
+                    link(rel='icon' href='src/img/favicon.png' type='image/x-icon')
+
+                    //- ----- CSS Files ----- //
+                    link(rel='stylesheet', href='css/style.css')
+                body
+                    $3
+
+                    script(type='text/javascript', src='js/main.js')
+        '''
